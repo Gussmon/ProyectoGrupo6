@@ -94,72 +94,72 @@
       </div>
     </div>
 
-    <!-- Modal del Formulario -->
-<div class="modal fade" id="modalProyecto" tabindex="-1" aria-labelledby="modalProyectoLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
+    <!-- Modal del Formulario Nuevo Curso -->
+<div class="modal fade" id="idModalNewCourse" tabindex="-1" aria-labelledby="idModalNewCourseLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
-        <form id="form-proyecto">
-          <div class="modal-header">
-            <h5 class="modal-title">Nuevo curso</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-          </div>
-          <div class="modal-body">
-            
-            <!-- Campo para el ID (oculto) -->
-            <input type="hidden" id="id" value="1" /> <!-- El ID se generaría en el backend, aquí solo es ejemplo -->
-  
-            <div class="mb-3">
-              <label class="form-label">Nombre del curso</label>
-              <input type="text" class="form-control" id="titulo" required />
-            </div>
-  
-            <div class="mb-3">
-              <label class="form-label">Imagen del curso</label>
-              <input type="file" class="form-control" id="imagen-curso" accept="image/*" required />
-            </div>
-  
-            <div class="mb-3">
-              <label class="form-label">Número de créditos</label>
-              <input type="number" class="form-control" id="creditos" required />
-            </div>
-  
-            <div class="mb-3">
-              <label class="form-label">Docente</label>
-              <input type="text" class="form-control" id="docente" required />
-            </div>
-  
-            <div class="mb-3">
-              <label class="form-label">Temas del curso</label>
-              <textarea class="form-control" id="temas" rows="4" required></textarea>
-            </div>
-  
-            <div class="mb-3">
-              <label class="form-label">Alumnos matriculados</label>
-              <select class="form-select" id="alumnos" multiple size="4" required>
-                <option>Gustavo Alonso Condor Llanos</option>
-                <option>Edy Winder Gutierrez</option>
-                <option>Oliver Espinoza Vera</option>
-              </select>
-            </div>
-  
-            <div class="mb-3">
-              <label class="form-label">Duración (semanas)</label>
-              <input type="number" class="form-control" id="duracion" min="1" required />
-            </div>
-  
-            <div class="mb-3">
-              <label class="form-label">Nota mínima</label>
-              <input type="number" class="form-control" id="nota-minima" min="0" max="20" step="0.1" required />
-            </div>
-  
-          </div>
-          <div class="modal-footer">
-            <button type="submit" class="btn btn-primary">Guardar Curso</button>
-          </div>
-        </form>
+          <form id="formCourse">
+              <div class="modal-header">
+                  <h5 class="modal-title">Nuevo Curso</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+              </div>
+              <div class="modal-body">
+                  <!-- Campo para el ID (oculto) -->
+                  <input type="hidden" id="idCourse" value="1" />
+
+                  <div class="mb-3">
+                      <label class="form-label">Nombre del curso</label>
+                      <input type="text" class="form-control" id="idTitleCourse" required />
+                  </div>
+
+                  <div class="mb-3">
+                      <label class="form-label">Imagen del curso</label>
+                      <input type="file" class="form-control" id="idImgCourse" accept="image/*" required />
+                  </div>
+
+                  <div class="mb-3">
+                      <label class="form-label">Créditos</label>
+                      <input type="number" class="form-control" id="idCredits" required />
+                  </div>
+
+                  <div class="mb-3">
+                      <label class="form-label">Docente</label>
+                      <input type="text" class="form-control" id="idInstructor" required />
+                  </div>
+
+                  <div class="mb-3">
+                      <label class="form-label">Temas</label>
+                      <textarea class="form-control" id="idTopics" rows="4" required></textarea>
+                  </div>
+
+                  <div class="mb-3">
+                      <label class="form-label">Alumnos matriculados</label>
+                      <select class="form-select" id="idStudents" multiple size="4" required>
+                          <!-- Lista de alumnos -->
+                          <option value="E01">Gustavo Alonso Condor Llanos</option>
+                          <option value="E02">Edy Winder Gutierrez</option>
+                          <option value="E03">Oliver Vera Espinoza</option>
+                      </select>
+                  </div>
+
+                  <div class="mb-3">
+                      <label class="form-label">Duración (semanas)</label>
+                      <input type="number" class="form-control" id="idDuration" min="1" required />
+                  </div>
+
+                  <div class="mb-3">
+                      <label class="form-label">Nota mínima</label>
+                      <input type="number" class="form-control" id="idMinGrade" min="0" max="20" step="0.1" required />
+                  </div>
+
+              </div>
+              <div class="modal-footer">
+                  <button type="submit" class="btn btn-primary">Guardar Curso</button>
+              </div>
+          </form>
       </div>
-    </div>
   </div>
+</div>
   
 
   <!-- Bootstrap JS -->
