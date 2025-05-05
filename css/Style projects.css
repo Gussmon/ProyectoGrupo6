@@ -1,0 +1,9 @@
+.mr-mod{
+    margin-right: 8px !important;  
+  }
+  
+  
+  .clTag{
+    display: flex;
+    align-content: space-around;
+  }
