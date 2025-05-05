@@ -15,15 +15,15 @@ $(document).ready(function(){
 let listaEquipos = [
     {
         id: "E01",
-        nombre: "Persona 01"
+        nombre: "Gustavo Alonso Condor Llanos"
     },
     {
         id: "E02",
-        nombre: "Persona 02"
+        nombre: "Edy Winder Gutierrez"
     },
     {
         id: "E03",
-        nombre: "Persona 03"
+        nombre: "Oliver Vera Espinoza"
     },
     {
         id: "E04",
